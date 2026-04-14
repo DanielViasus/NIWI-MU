@@ -1,0 +1,116 @@
+========================================
+NIWI-MU - BRANCH STRUCTURE
+========================================
+
+Este documento describe la estructura base de ramas del proyecto NIWI-MU.
+
+========================================
+1. RAMAS PRINCIPALES
+========================================
+
+main
+-> Rama estable del proyecto.
+-> Aquí solo deben llegar versiones revisadas, probadas y funcionales.
+-> No se debe trabajar directamente sobre esta rama.
+
+dev
+-> Rama principal de desarrollo.
+-> Aquí se integran los avances del equipo antes de pasarlos a main.
+-> Funciona como rama intermedia entre trabajo individual y versión estable.
+
+========================================
+2. RAMAS POR INTEGRANTE
+========================================
+
+Cada integrante del equipo cuenta con su propia rama de trabajo.
+
+Ramas actuales del proyecto:
+
+code-carlos-morelo
+code-jose-bonilla
+code-carlos-mancera
+code-santiago-franco
+code-daniel-viasus
+gd-mariana-lozano
+art-xiomara-munoz
+pm-francisco-tabarez
+pm-victor-molina
+
+========================================
+3. FUNCION DE LAS RAMAS PERSONALES
+========================================
+
+Las ramas personales sirven para que cada integrante trabaje de forma
+individual sin afectar directamente las ramas principales del proyecto.
+
+En estas ramas se pueden realizar:
+- pruebas
+- implementación de tareas
+- cambios de scripts
+- montaje de escenas
+- integración de arte
+- documentación
+- ajustes de configuración
+
+========================================
+4. FLUJO ACTUAL DEL PROYECTO
+========================================
+
+El flujo actual de ramas es:
+
+rama personal -> dev -> main
+
+Ejemplo:
+
+code-daniel-viasus -> dev -> main
+
+Esto significa:
+
+1. Cada integrante trabaja en su propia rama.
+2. Sus cambios luego se integran a dev.
+3. Cuando dev esté estable, esos cambios pasan a main.
+
+========================================
+5. REGLAS BASICAS
+========================================
+
+1. No trabajar directamente en main.
+2. No usar dev para trabajo experimental individual.
+3. Cada integrante debe trabajar en su propia rama.
+4. Antes de comenzar a trabajar, se recomienda actualizar la rama.
+5. Los cambios deben revisarse antes de integrarse a dev.
+6. Solo los cambios estables deben llegar a main.
+
+========================================
+6. NOTA IMPORTANTE
+========================================
+
+Aunque conceptualmente se diga que las ramas de los integrantes
+"nacen desde dev", en Git todas las ramas se visualizan al mismo nivel.
+
+Lo importante no es la posición visual de la rama, sino que su punto
+de creación haya sido la rama dev.
+
+========================================
+7. EVOLUCION FUTURA
+========================================
+
+En una etapa posterior, cuando el equipo tenga mayor dominio del flujo
+de trabajo con Git, el proyecto podrá incorporar ramas por tipo de tarea,
+por ejemplo:
+
+feature/...
+fix/...
+art/...
+scene/...
+ui/...
+data/...
+docs/...
+
+Por ahora, la estructura oficial se mantendrá con:
+
+main
+dev
+ramas por integrante
+
+========================================
