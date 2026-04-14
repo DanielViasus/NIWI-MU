@@ -1,0 +1,109 @@
+========================================
+NIWI-MU - PROJECT STRUCTURE
+========================================
+
+Este documento describe la estructura base del proyecto NIWI-MU
+y el uso de cada carpeta dentro de Assets.
+
+----------------------------------------
+ROOT
+----------------------------------------
+Assets/             -> Contenido principal del proyecto (juego)
+Public/             -> Contenido Explusivo para sistemas de Integracion (Todos pueden modificar el contenido pero con Orden)
+Packages/           -> Dependencias y paquetes de Unity
+ProjectSettings/    -> Configuración del proyecto Unity
+
+----------------------------------------
+PUBLIC STRUCTURE
+----------------------------------------
+
+Art/
+Recursos visuales generales que no tienen una categoría específica aún.
+
+Audio/
+Efectos de sonido, música y ambientes.
+
+Data/
+Datos del juego:
+- ScriptableObjects
+- Catálogos
+- Configuraciones
+
+Materials/
+Materiales de Unity utilizados por modelos y escenarios.
+
+Models/
+Modelos 3D provenientes del equipo de arte.
+
+Prefabs/
+Objetos reutilizables del juego:
+- NPCs
+- Props
+- Elementos interactivos
+
+Resources/
+Recursos cargados dinámicamente por código.
+(Usar solo cuando sea necesario)
+
+Scenes/
+Escenas del juego:
+- Lobby
+- Niveles
+- Zonas
+
+Scripts/
+Código fuente del proyecto:
+- Lógica de gameplay
+- Sistemas (NPC, Teleport, State, etc.)
+
+Settings/
+Configuraciones del proyecto:
+- Render Pipeline
+- Input
+- Configs internas
+
+Sprites/
+Recursos 2D:
+- Personajes
+- Iconos
+- Elementos gráficos
+
+UI/
+Elementos de interfaz:
+- HUD
+- Menús
+- Componentes visuales
+
+----------------------------------------
+REGLAS GENERALES
+----------------------------------------
+
+1. No mover archivos desde el navegador de Carpetas.
+   Siempre usar Unity para mantener los .meta.
+
+2. No borrar archivos .meta.
+   Son esenciales para referencias internas.
+
+3. Mantener el orden de carpetas.
+   No crear nuevas carpetas en raíz sin consenso.
+
+4. Prefabs antes que escenas.
+   Reutilizar elementos siempre que sea posible.
+
+5. Evitar editar la misma escena entre varias personas.
+
+6. Hacer commit frecuente con mensajes claros.
+
+----------------------------------------
+NOTAS
+----------------------------------------
+
+Este es un prototipo académico desarrollado para el SENA,
+enfocado en entorno web y estilo visual 3D low poly.
+
+La estructura puede evolucionar según necesidades del proyecto,
+pero siempre debe mantenerse organizada.
+
+Att: Daniel Alejandro Viasus
+
+========================================
